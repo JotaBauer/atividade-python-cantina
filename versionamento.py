@@ -1,4 +1,5 @@
 i = 1
+n=0
 valor_compra = 0
 print('Bem Vindo a nossa loja! Temos os seguintes produtos:')
 while i == 1:
@@ -14,12 +15,16 @@ while i == 1:
 
     if p == 1:
         valor_compra+=5
+        n+=1
     elif p == 2:
         valor_compra+=7
+        n+=1
     elif p == 3:
         valor_compra+=10
+        n+=1
     elif p == 4:
         print(f'O valor total da compra foi R$ {valor_compra}')
+        print(f'Foram comprados {n} produtos')
         break
     else:
         print('Opção invalida!')
@@ -31,5 +36,6 @@ while i == 1:
     else:
         i = 0
         print(f'O valor total da compra foi R$ {valor_compra}')
+        print(f'Foram comprados {n} produtos')
 
 
